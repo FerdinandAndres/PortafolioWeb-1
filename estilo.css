@@ -241,3 +241,136 @@ html {
     display: block;
     margin-bottom: 10px;
 }
+.skills .skill .barra-skill{
+    height: 8px;
+    width: 80px;
+    background-color: aquamarine;
+    position: relative;
+    margin-bottom: 30px;
+}
+.skills .skill .progreso{
+    background-color: aquamarine;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 8px;
+}
+.skills .skill .barra-skill span{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background-color: aquamarine;
+    border-radius: 50px;
+    line-height: 40px;
+    text-align: center;
+    top: -17px;
+    right: -15px;
+    font-size: 14px;
+}
+/* Estas clases se agregan dinamicamnete mediante javascript*/
+.skills .skill .htmlcss{
+    width: 0%;
+    animation: 2s htmlcss forwards;
+}
+@keyframes htmlcss{
+    0%{width: 0%;}
+    100%{width: 89%;}
+}
+.skills .skill .javascript{
+    width: 0%;
+    animation: 2s htmlcss forwards;
+}
+@keyframes javascript{
+    0%{width: 0%;}
+    100%{width: 95%;}
+}
+.skills .skill .wordpress{
+    width: 0%;
+    animation: 2s htmlcss forwards;
+}
+@keyframes wordpress{
+    0%{width: 0%;}
+    100%{width: 81%;}
+}
+.skills .skill .androidstudio{
+    width: 0%;
+    animation: 2s htmlcss forwards;
+}
+@keyframes androidstudio{
+    0%{width: 0%;}
+    100%{width: 55%;}
+}
+.skills .skill .laravel{
+    width: 0%;
+    animation: 2s htmlcss forwards;
+}
+@keyframes laravel{
+    0%{width: 0%;}
+    100%{width: 55%;}
+}
+.skills .skill .typescript{
+    width: 0%;
+    animation: 2s htmlcss forwards;
+}
+@keyframes typescript{
+    0%{width: 0%;}
+    100%{width: 55%;}
+}
+.skills .skill .front-end{
+    width: 0%;
+    animation: 2s htmlcss forwards;
+}
+@keyframes front-end{
+    0%{width: 0%;}
+    100%{width: 55%;}
+}
+.skills .skill .back-end{
+    width: 0%;
+    animation: 2s htmlcss forwards;
+}
+@keyframes back-end{
+    0%{width: 0%;}
+    100%{width: 55%;}
+}
+.skills .skill .comunicacion{
+    width: 0%;
+    animation: 2s htmlcss forwards;
+}
+@keyframes comunicacion{
+    0%{width: 0%;}
+    100%{width: 80%;}
+}
+.skills .skill .trabajo{
+    width: 0%;
+    animation: 2s htmlcss forwards;
+}
+@keyframes trabajo{
+    0%{width: 0%;}
+    100%{width: 70%;}
+}
+.skills .skill .creatividad{
+    width: 0%;
+    animation: 2s htmlcss forwards;
+}
+@keyframes creatividad{
+    0%{width: 0%;}
+    100%{width: 99%;}
+}
+.skills .skill .dedicacion{
+    width: 0%;
+    animation: 2s htmlcss forwards;
+}
+@keyframes dedicacion{
+    0%{width: 0%;}
+    100%{width: 65%;}
+}
+.skills .skill .proyect{
+    width: 0%;
+    animation: 2s htmlcss forwards;
+}
+@keyframes proyect{
+    0%{width: 0%;}
+    100%{width: 94%;}
+}
+
+
