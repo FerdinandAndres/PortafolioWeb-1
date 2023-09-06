@@ -17,15 +17,15 @@
             </div>        
             <nav id="nav">
                 <ul>
-                    <li><a href="#inicio">INICIO</a></li>
-                    <li><a href="#sobremi">SOBRE MI</a></li>
-                    <li><a href="#skills">SKILLS</a></li>
-                    <li><a href="#curriculum">CURRICULUM</a></li>
-                    <li><a href="#portfolio">PORTAFOLIO</a></li>
-                    <li><a href="#contacto">CANTACTO</a></li>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">HABILIDADES</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTAFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CANTACTO</a></li>
                 </ul>
             </nav>
-            <div class="nav-responsive">
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
                 <i class="fa-solid fa-bars"></i>
             </div>
     
@@ -133,18 +133,19 @@
     </section>
 
     <!-- Seccion skills -->
-    <section class="skills" id="skills">
+     <!-- SECCION SKILLS -->
+     <section class="skills" id="skills">
         <div class="contenido-seccion">
             <h2>Habilidades</h2>
             <div class="fila">
-                <!--Habilidades tecnicas-->
+                <!-- Technical Skill -->
                 <div class="col">
-                    <h3>Habilidades Tecnicas</h3>
+                    <h3>Habilidades tecnicas</h3>
                     <div class="skill">
                         <span>Javascript</span>
                         <div class="barra-skill">
                             <div class="progreso">
-                                <span>50%</span>
+                                <span>55%</span>
                             </div>
                         </div>
                     </div>
@@ -152,62 +153,38 @@
                         <span>HTML & CSS</span>
                         <div class="barra-skill">
                             <div class="progreso">
-                                <span>75%</span>
+                                <span>89%</span>
                             </div>
                         </div>
                     </div>
                     <div class="skill">
-                        <span>Android Studio</span>
+                        <span>Framework</span>
                         <div class="barra-skill">
                             <div class="progreso">
-                                <span>45%</span>
+                                <span>95%</span>
                             </div>
                         </div>
                     </div>
                     <div class="skill">
-                        <span>Laravel</span>
+                        <span>Wordpress</span>
                         <div class="barra-skill">
                             <div class="progreso">
-                                <span>50%</span>
+                                <span>81%</span>
                             </div>
                         </div>
                     </div>
                     <div class="skill">
-                        <span>TypeScript</span>
+                        <span>Front-End & Back-End</span>
                         <div class="barra-skill">
                             <div class="progreso">
-                                <span>50%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>WordPress</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>50%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>Front-end</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>35%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>Back-end</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>35%</span>
+                                <span>55%</span>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- Profesional Skills-->
+                <!-- Professional Skills -->
                 <div class="col">
-                    <h3>Habilidades Profesionales</h3>
+                    <h3>Habilidades profesionales</h3>
                     <div class="skill">
                         <span>Comunicación</span>
                         <div class="barra-skill">
@@ -217,10 +194,10 @@
                         </div>
                     </div>
                     <div class="skill">
-                        <span>Trabajo en equipo</span>
+                        <span>Trabajo en Equipo</span>
                         <div class="barra-skill">
                             <div class="progreso">
-                                <span>100%</span>
+                                <span>70%</span>
                             </div>
                         </div>
                     </div>
@@ -228,7 +205,7 @@
                         <span>Creatividad</span>
                         <div class="barra-skill">
                             <div class="progreso">
-                                <span>80%</span>
+                                <span>99%</span>
                             </div>
                         </div>
                     </div>
@@ -236,15 +213,15 @@
                         <span>Dedicación</span>
                         <div class="barra-skill">
                             <div class="progreso">
-                                <span>90%</span>
+                                <span>69%</span>
                             </div>
                         </div>
                     </div>
                     <div class="skill">
-                        <span>Gestion de Proyectos</span>
+                        <span>Gestión de Proyectos</span>
                         <div class="barra-skill">
                             <div class="progreso">
-                                <span>40%</span>
+                                <span>94%</span>
                             </div>
                         </div>
                     </div>
@@ -384,7 +361,7 @@
             </div>
             <!-- Mapa -->
             <div class="col">
-                <img src="img/p5.jpg" alt="">
+                
                 <div class="info">
                     <ul>
                         <li>

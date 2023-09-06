@@ -211,7 +211,7 @@ html {
 /* Seccion skillls */
 .skills{
     background-color: #252A2E;
-    color: #ffff;
+    color: #fff;
     padding: 50px 20px;
 }
 .skills .contenido-seccion{
@@ -223,6 +223,7 @@ html {
     font-family: 'Righteous';
     text-align: center;
     padding: 20px 0;
+
 }
 .skills .fila{
     display: flex;
@@ -243,7 +244,7 @@ html {
 }
 .skills .skill .barra-skill{
     height: 8px;
-    width: 80px;
+    width: 80%;
     background-color: #131517;
     position: relative;
     margin-bottom: 30px;
@@ -268,107 +269,92 @@ html {
     font-size: 14px;
 }
 /* Estas clases se agregan dinamicamnete mediante javascript*/
+.skills .skill .javascript{
+    width: 0%;
+    animation: 2s javascript forwards;
+}
+@keyframes javascript {
+    0%{width: 0%;}
+    100%{width: 75%;}
+}
+
 .skills .skill .htmlcss{
     width: 0%;
     animation: 2s htmlcss forwards;
 }
-@keyframes htmlcss{
+@keyframes htmlcss {
     0%{width: 0%;}
     100%{width: 89%;}
 }
-.skills .skill .javascript{
+
+.skills .skill .framework{
     width: 0%;
-    animation: 2s htmlcss forwards;
+    animation: 2s framework forwards;
 }
-@keyframes javascript{
+@keyframes framework {
     0%{width: 0%;}
     100%{width: 95%;}
 }
+
 .skills .skill .wordpress{
     width: 0%;
-    animation: 2s htmlcss forwards;
+    animation: 2s wordpress forwards;
 }
-@keyframes wordpress{
+@keyframes wordpress {
     0%{width: 0%;}
     100%{width: 81%;}
 }
-.skills .skill .androidstudio{
+
+.skills .skill .front-End-back-End{
     width: 0%;
-    animation: 2s htmlcss forwards;
+    animation: 2s front-End-back-End forwards;
 }
-@keyframes androidstudio{
+@keyframes front-End-back-End {
     0%{width: 0%;}
     100%{width: 55%;}
 }
-.skills .skill .laravel{
-    width: 0%;
-    animation: 2s htmlcss forwards;
-}
-@keyframes laravel{
-    0%{width: 0%;}
-    100%{width: 55%;}
-}
-.skills .skill .typescript{
-    width: 0%;
-    animation: 2s htmlcss forwards;
-}
-@keyframes typescript{
-    0%{width: 0%;}
-    100%{width: 55%;}
-}
-.skills .skill .front-end{
-    width: 0%;
-    animation: 2s htmlcss forwards;
-}
-@keyframes front-end{
-    0%{width: 0%;}
-    100%{width: 55%;}
-}
-.skills .skill .back-end{
-    width: 0%;
-    animation: 2s htmlcss forwards;
-}
-@keyframes back-end{
-    0%{width: 0%;}
-    100%{width: 55%;}
-}
+
 .skills .skill .comunicacion{
     width: 0%;
-    animation: 2s htmlcss forwards;
+    animation: 2s comunicacion forwards;
 }
-@keyframes comunicacion{
+@keyframes comunicacion {
     0%{width: 0%;}
     100%{width: 80%;}
 }
+
 .skills .skill .trabajo{
     width: 0%;
-    animation: 2s htmlcss forwards;
+    animation: 2s trabajo forwards;
 }
-@keyframes trabajo{
+@keyframes trabajo {
     0%{width: 0%;}
     100%{width: 70%;}
 }
+
 .skills .skill .creatividad{
     width: 0%;
-    animation: 2s htmlcss forwards;
+    animation: 2s creatividad forwards;
 }
-@keyframes creatividad{
+@keyframes creatividad {
     0%{width: 0%;}
     100%{width: 99%;}
 }
+
 .skills .skill .dedicacion{
     width: 0%;
-    animation: 2s htmlcss forwards;
+    animation: 2s dedicacion forwards;
 }
-@keyframes dedicacion{
+@keyframes dedicacion {
     0%{width: 0%;}
     100%{width: 65%;}
 }
+
 .skills .skill .proyect{
     width: 0%;
-    animation: 2s htmlcss forwards;
+    animation: 2s proyect forwards;
 }
-@keyframes proyect{
+@keyframes proyect {
     0%{width: 0%;}
     100%{width: 94%;}
 }
@@ -537,7 +523,7 @@ html {
 }
 /* SECCION CONTACTO */
 .contacto{
-    background-image: url(img/p6.jpg);
+    background-image: url(img/p5.jpg);
     background-color: #1e2326;
     color: #fff;
     padding: 50px 0;
@@ -582,4 +568,147 @@ html {
     color: #fff;
     position: relative;
     z-index: 10;
+}
+.contacto button .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #1CB698;
+    z-index: -1;
+    transition: 1s;
+}
+.contacto button:hover .overlay{
+    width: 100%;
+}
+.contacto .col img{
+    width: 120%;
+}
+.contacto .col .info{
+    position: absolute;
+    top: 40%;
+    background-color: #252A2E;
+    padding: 20px;
+    max-width: 350px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.contacto .col .info ul{
+    list-style: none;
+}
+.contacto .col .info ul li{
+    margin-bottom: 20px;
+}
+.contacto .col .info ul li i{
+    color: #1CB698;
+    display: inline-block;
+    margin-right: 20px;
+}
+footer{
+    background-color: #252A2E;
+    color: #fff;
+    padding: 50px 0 30px 0;
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+footer .redes{
+    margin-bottom: 20px;
+}
+footer .redes a{
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 40px 5px;
+    font-size: 20px;
+    transition: .3s;
+}
+footer .arriba{
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: #1CB698;
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -25px;
+    border-radius: 50%;
+    line-height: 50px;
+    font-size: 18px;
+}
+/* SECCION RESPONSIVE */
+@media screen and (max-width:980px){
+    nav{
+        display: none;
+    }
+    .nav-responsive{
+        display: block;
+    }
+    nav.responsive{
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 75px;
+        background-color: #252A2E;
+        width: 180px;
+    }
+    nav.responsive ul{
+        display: block !important;
+    }
+    nav.responsive ul li{
+        border-bottom: 1px solid #fff;
+        padding: 10px 0;
+    }
+}
+@media screen and (max-width:700px){
+    .sobremi .fila{
+        display: block;
+    }
+    .sobremi .fila .col{
+        width: fit-content;
+    }
+
+    .skills .fila{
+        display: block;
+    }
+    .skills .fila .col{
+        width: 100%;
+    }
+    .skills .fila .col .barra-skill{
+        width: 100%;
+    }
+
+    .curriculum .fila{
+        display: block;
+    }
+    .curriculum .fila .col{
+        width: 90%;
+    }
+    .curriculum .fila .derecha{
+        margin-left: 20px;
+    }
+
+    .portfolio .galeria{
+        display: block;
+        width: 100%;
+    }
+    .portfolio .galeria .proyecto{
+        max-width: 100%;
+    }
+    .portfolio .galeria .proyecto img{
+        width: 100%;
+    }
+    .contacto .fila{
+        display: block;
+    }
+    .contacto .fila .col{
+        width: 100%;
+    }
 }
